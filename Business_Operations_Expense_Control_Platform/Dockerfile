@@ -1,13 +1,15 @@
-﻿FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+﻿FROM ://microsoft.com AS build
 WORKDIR /src
 
-# Since Render's Root Directory drops us directly in this folder, copy the csproj locally
+# Copy the csproj file locally and restore dependencies
 COPY ["Business_Operations_Expense_Control_Platform.csproj", "./"]
 RUN dotnet restore "Business_Operations_Expense_Control_Platform.csproj"
 
-# Copy the rest of the code files and compile
+# Copy the rest of the code files
 COPY . .
-RUN dotnet publish -c Release -o /app/publish
+
+# FIXED: Explicitly target the csproj file so it ignores the missing test project
+RUN dotnet publish "Business_Operations_Expense_Control_Platform.csproj" -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app

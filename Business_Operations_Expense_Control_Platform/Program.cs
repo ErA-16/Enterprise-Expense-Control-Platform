@@ -84,7 +84,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontendDev", policy =>
         policy.WithOrigins(
                   "http://localhost:5173",
-                  "https://onrender.com"
+                  "https://expense-control-frontend-aedl.onrender.com"
               )
               .AllowAnyHeader()
               .AllowAnyMethod()

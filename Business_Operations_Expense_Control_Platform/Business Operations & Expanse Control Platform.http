@@ -1,0 +1,6 @@
+@Business_Operations___Expanse_Control_Platform_HostAddress = http://localhost:5291
+
+GET {{Business_Operations___Expanse_Control_Platform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

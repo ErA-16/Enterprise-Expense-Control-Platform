@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ExpenseControl.Test/ExpenseControl.Test.csproj" Id="3d46019c-75ea-4500-ad68-26e763a6be65" />
+  <Project Path="Business_Operations_Expense_Control_Platform.csproj" />
+</Solution>

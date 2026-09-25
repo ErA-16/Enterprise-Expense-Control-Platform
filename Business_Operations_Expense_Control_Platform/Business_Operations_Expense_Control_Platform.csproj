@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<RootNamespace>Business_Operations_Expense_Control_Platform</RootNamespace>
+		<AssemblyName>Business_Operations_Expense_Control_Platform</AssemblyName>
+
+		<RestoreSources>https://api.nuget.org/v3/index.json</RestoreSources>
+		<RestoreIgnoreFailedSources>true</RestoreIgnoreFailedSources>
+
+		<UserSecretsId>46a3b2da-89ab-4a69-9b4f-b76063adc117</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.12" />
+
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.12">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.12">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<PackageReference Include="Microsoft.Extensions.AI" Version="10.10.0" />
+
+		<PackageReference Include="Microsoft.OpenApi" Version="2.7.5" />
+
+		<PackageReference Include="Moq" Version="4.21.0" />
+
+		<PackageReference Include="Mscc.GenerativeAI.Microsoft" Version="3.1.0" />
+
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+	</ItemGroup>
+
+</Project>
